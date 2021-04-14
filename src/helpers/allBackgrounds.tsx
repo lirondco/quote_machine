@@ -1,4 +1,4 @@
-export const allBackgrounds = [
+const allBackgrounds = [
 	"red",
 	"orangered",
 	"orange",
@@ -11,3 +11,5 @@ export const allBackgrounds = [
 	"violet",
 	"crimson"
 ];
+
+export default allBackgrounds;

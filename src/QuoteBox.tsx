@@ -4,8 +4,8 @@ import { Tooltip } from "@material-ui/core";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 type QuoteProps = {
-  quote: string;
-  author: string;
+  quote: string | null;
+  author: string | null;
   color: string;
   setQuote: any;
 };
