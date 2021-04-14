@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap');
+
+html,
+body {
+	height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quote-box {
+	background-color: white;
+	margin: 0 auto;
+	padding: 50px;
+	border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#text {
+	text-align: center;
+	font-size: 28px;
+	font-family: "Josefin Sans", sans-serif;
+	position: relative;
+	padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+#author {
+	text-align: right;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+	color: white;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.social-button {
+	margin-right: 5px;
+	padding: 10px 30px;
+	font-size: 16pt;
+	border-radius: 5px;
+}
+
+#new-quote,
+.social-button {
+	padding: 10px 30px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16pt;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+}
+
+.social-button:hover,
+#new-quote:hover {
+	filter: brightness(2);
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
 }
